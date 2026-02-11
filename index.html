@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="input">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" required />
+          <ul class="display fname">
+            
+          </ul>
+        </div>
+        <div class="input">
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" required />
+          <ul class="display lname"></ul>
+        </div>
+        <div class="input">
+          <label for="phone">Phone number:</label>
+          <input type="text" id="phone" name="phone" required />
+          <ul class="display phone"></ul>
+        </div>
+        <div class="input">
+          <label for="date">Birth date:</label>
+          <input
+            type="text"
+            id="date"
+            name="date"
+            placeholder="yyyy/mm/dd"
+            required
+          />
+          <ul class="display date"></ul>
+        </div>
+        <div class="input">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+          <ul class="display email"></ul>
+        </div>
+        <div class="passwords">
+          <div class="input">
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" required />
+            <ul class="display pass"></ul>
+          </div>
+          <div class="input">
+            <label for="cpass">Confirm password:</label>
+            <input type="password" id="cpass" name="cpass" required />
+            <ul class="display cpass"></ul>
+          </div>
+        </div>
+        <button class="btn">submit</button>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
